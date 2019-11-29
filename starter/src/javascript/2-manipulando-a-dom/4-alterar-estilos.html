@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Manipulando a DOM</title>
+</head>
+
+<body>
+  <!-- A tag <div> define uma divisão ou seção em um documento HTML -->
+  <div id="app">
+    <div class="box"></div>
+  </div>
+
+  <script>
+    var boxElement = document.querySelector('.box'); //.box porque é uma classe
+
+    boxElement.style.width = 100; // sem px
+    boxElement.style.height = 100;
+    boxElement.style.backgroundColor = '#f00'; // ao inves de background-color, usando caixa alta, CamelCase.
+  </script>
+</body>
+
+</html>
+

@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Manipulando a DOM</title>
+</head>
+
+<body>
+  <button id="create">Criar quadrado</button><br>
+
+  <ul id="list"></ul>
+
+  <!-- <div id="test" style="background-color: blue; height: 100px; width: 100px"></div> -->
+
+  <script>
+
+    var btnElement = document.getElementById('create');
+    // var squaresElement = document.getElementById('squares');
+    var listElement = document.getElementById('list');
+    listElement.style.listStyleType = 'none'; // para retirar a marcação no inicio de cada elemento da lista
+    // listElement.style.display = 'block';
+
+    btnElement.onclick = function () {
+      // var square = document.createElement('div');
+      var next = document.createElement('li');
+      var square = document.createElement('div');
+      square.style.width = 100;
+      square.style.height = 100;
+      square.style.backgroundColor = '#ff0000';
+      square.style.margin = 10;
+      // square.style.display = 'inline';
+      next.appendChild(square);
+      listElement.appendChild(next);
+      // squaresElement.appendChild(square);
+
+      square.onmouseover = function () {
+        square.style.backgroundColor = getRandomColor();
+      }
+    };
+
+    // var divElement = document.getElementById('test');
+
+    // divElement.onmouseover = function () {
+    //   divElement.style.backgroundColor = getRandomColor();
+    // }
+
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        // A função Math.floor(x) retorna o menor número inteiro dentre o número "x"
+
+        // A função Math.random() retorna um número pseudo-aleatório no intervalo [0, 1[, 
+        // ou seja, de 0 (inclusivo) até, mas não incluindo, 1 (exclusivo).
+      }
+
+      return color;
+    }
+
+  </script>
+
+</body>
+
+</html>
+
+<!-- RESOLUÇÃO DO EXERCÍCIO PELA ROCKETSEAT -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercício 02</title>
+</head>
+
+<body>
+  <button id="new">Novo quadrado</button>
+
+  <div id="squares"></div>
+
+  <script>
+    var btnElement = document.getElementById('new');
+    var squaresElement = document.getElementById('squares');
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+    btnElement.onclick = function () {
+      var square = document.createElement('div');
+      square.style.width = '100px';
+      square.style.height = '100px';
+      square.style.backgroundColor = '#F00';
+      square.onmouseover = function () {
+        square.style.backgroundColor = getRandomColor();
+      }
+      squaresElement.appendChild(square);
+    };
+  </script>
+</body>
+
+</html> -->

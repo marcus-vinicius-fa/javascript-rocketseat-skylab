@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Introdução</title>
+</head>
+
+<body>
+  <script>
+    function retornaSexoComIf(sexo) { // Uso do IF, ELSE IF, ELSE
+      // M, F
+      // Masculino, Feminino
+
+      if (sexo === 'M') { // 3 iguais verifica se o tipo e o que eu quero, e não só o valor armazenado na variável.
+        return 'Masculino';
+
+      } else if (sexo === 'F') {
+        return 'Feminino';
+
+      } else {
+        return 'Digitação errada!';
+      }
+    }
+
+    function retornaSexoComSwitch(sexo) { // Uso do SWITCH
+      // M, F
+      // Masculino, Feminino
+      switch (sexo) {
+        case 'M':
+          return 'Masculino';
+        case 'F':
+          return 'Feminino';
+        default:
+          return 'Digitação errada!';
+      }
+    }
+
+    var resultado = retornaSexoComIf('m');
+    var resultado2 = retornaSexoComSwitch('F');
+
+    console.log(resultado);
+    console.log(resultado2);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Manipulando a DOM</title>
+</head>
+
+<body>
+  <!-- A tag <div> define uma divisão ou seção em um documento HTML -->
+  <div id="app">
+    <input type="text" name="nome" id="nome" />
+    <button class="botao">Adicionar</button>
+  </div>
+
+  <script>
+    // document referencia a arvore de elementos do doc html           
+    var inputElement = document.getElementById('nome');
+    var inputElement = document.getElementsByTagName('input')[0]; // 0 referencia qual é o input para fazer get.
+    // class e name não são únicos como o id, por isso sempre retornam um array de elementos
+    //console.log(inputElement);
+
+    var inputElement = document.querySelector('div#app input'); //# para passar o ID, como um seletor do css.
+    //console.log(inputElement);
+
+    // querySelectorAll() para retornar todos os elementos, em array.
+    var inputElement = document.querySelector('input[name=nome]') // [] serve para achar a propriedade dentro do elemento.
+
+    // retorne o elemento <button>...
+    var buttonElement = document.querySelector('button.botao'); // .botao = classe, como no seletor do css.
+
+    buttonElement.onclick = function () { 
+      alert('Botão clicado');  
+    }
+
+    buttonElement.onclick = function () { //Manipulação da DOM através do javascript!
+      var text = inputElement.value;
+      alert(text);
+    }
+
+  </script>
+</body>
+
+</html>

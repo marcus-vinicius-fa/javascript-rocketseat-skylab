@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Manipulando a DOM</title>
+</head>
+
+<body>
+  
+  <script>
+    var ulElement = document.createElement('ul');
+    var bodyElement = document.querySelector('body');
+    bodyElement.appendChild(ulElement);
+
+    var nomes = ["Marcus", "Sâmela", "Filho"];
+
+    // var i = 0; i < nomes.length; i++
+    function renderList() {
+      for (nome of nomes) {
+        var liElement = document.createElement('li');
+        var textElement = document.createTextNode(nome);
+        liElement.appendChild(textElement);
+        ulElement.appendChild(liElement);
+      }
+    }
+    renderList();
+
+    var inputElement = document.createElement('input');
+
+    function adicionar() {
+      nomes = [];
+      nomes.push(inputElement.value);
+      inputElement.value = "";
+      renderList();
+    }
+
+    var btnElement = document.createElement('button');
+    btnElement.setAttribute('onclick', 'adicionar()');
+    var textElement = document.createTextNode('Adicionar');
+    btnElement.appendChild(textElement);
+
+    bodyElement.appendChild(inputElement);
+    bodyElement.appendChild(btnElement);    
+
+  </script>
+
+
+</body>
+
+</html>
+
+<!-- RESOLUÇÃO DO EXERCÍCIO PELA ROCKETSEAT -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercício 04</title>
+</head>
+
+<body>
+  <ul></ul>
+
+  <input type="text" name="nome">
+  <button onclick="adicionar()">Adicionar</button>
+
+  <script>
+    var nomes = ['Diego', 'Gabriel', 'Lucas'];
+    var listElement = document.querySelector('ul');
+    var inputElement = document.querySelector('input');
+    function addItem(text) {
+      var liElement = document.createElement('li');
+      var textElement = document.createTextNode(text);
+      liElement.appendChild(textElement);
+      listElement.appendChild(liElement);
+    }
+    function adicionar() {
+      addItem(inputElement.value);
+      inputElement.value = "";
+    }
+    for (nome of nomes) {
+      addItem(nome);
+    }
+  </script>
+</body>
+
+</html> -->

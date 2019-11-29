@@ -1,0 +1,10 @@
+{
+	// o babel tem vários presets
+	"presets": [
+		"@babel/preset-env"
+	], // o preset-env diz qual é o ambiente de trabalho
+	// o ambiente é browser. Ele pode estar no ambiente node, react...
+	"plugins": [
+		"@babel/plugin-proposal-object-rest-spread"
+	]
+}

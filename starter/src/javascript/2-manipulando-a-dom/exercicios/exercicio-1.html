@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Manipulando a DOM</title>
+</head>
+
+<body>
+  <button id="create">Criar quadrado</button><br>
+
+  <!-- <div id="squares"></div> -->
+
+  <ul id="list"></ul>
+
+  <script>
+    var btnElement = document.getElementById('create');
+    // var squaresElement = document.getElementById('squares');
+    var listElement = document.getElementById('list');
+    listElement.style.listStyleType = 'none';
+    // listElement.style.display = 'block';
+
+    btnElement.onclick = function () {
+      // var square = document.createElement('div');
+      var next = document.createElement('li');
+      var square = document.createElement('div');
+
+      square.style.width = 100;
+      square.style.height = 100;
+      square.style.backgroundColor = '#ff0000';
+      square.style.margin = 10;
+      // square.style.display = 'inline';
+
+      next.appendChild(square);
+      listElement.appendChild(next);      
+      // squaresElement.appendChild(square);
+    };
+
+  </script>
+
+
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+
+RESOLUÇÃO DO EXERCÍCIO PELA ROCKETSEAT
+
+<html lang="en">
+
+<head>
+  <title>Exercício 01</title>
+</head>
+
+<body>
+  <button id="new">Novo quadrado</button>
+
+  <div id="squares"></div>
+
+  <script>
+    var btnElement = document.getElementById('new');
+    var squaresElement = document.getElementById('squares');
+    btnElement.onclick = function () {
+      var square = document.createElement('div');
+      square.style.width = '100px';
+      square.style.height = '100px';
+      square.style.backgroundColor = '#F00';
+      squaresElement.appendChild(square);
+    };
+  </script>
+</body>
+
+</html> -->

@@ -1,0 +1,40 @@
+# Uso do Lint
+
+ESLint
+------
+
+1) Gerenciar o projeto com npm
+
+$ npm init -y 
+// -y serve para utilizar todas as opções padrões
+
+$ npm install eslint --save-dev 
+// Para instalar essa dependência no modo desenvolvimento (para não subir para produção)
+
+$ npm install eslint -g --save-dev 
+// Para instalar de forma global (todos os projetos)
+
+$ node_modules/.bin/eslint --init
+
+$ node_modules/.bin/eslint arquivo.ext (ou /dir/dir/arquivo.ext)
+
+$ node_modules/.bin/eslint arquivo.ext (ou /dir/dir/arquivo.ext) --fix
+// Para ajustar alguns erros de forma automatica
+
+$ node_modules/.bin/eslint arquivo.ext (ou /dir/dir/arquivo.ext) (ou /dir/dir/**)
+
+Encurtando o caminho para a execução
+------------------------------------
+
+Em (package.json > scripts:) adicionar:
+"lint": "eslint arquivo.ext (ou /dir/dir/arquivo.ext) (ou /dir/dir/**) --fix"
+
+depois rodar no terminal:
+$ npm run lint
+
+Mais
+----
+
+>>> Usar o Prettier para altomatizar a formatação do ESLint
+
+>>> Usar o EditorConfig

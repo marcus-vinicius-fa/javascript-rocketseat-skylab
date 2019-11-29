@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Manipulando a DOM</title>
+</head>
+
+<body>
+  <!-- A tag <div> define uma divisão ou seção em um documento HTML -->
+  <div style="text-align:center" id="app">
+    <button style="font-size: 50;" onclick="alertaClick()">Me pressione</button><br><br>
+    <button style="font-size: 50;" onmouseover="alertaMouse()">Passe o mouse aqui</button><br><br>
+    <label style="font-size: 50;" for="input">Escreva dento do campo</label><br>
+    <input style="font-size: 50;" name="input" onkeypress="alertaDigitacao()" />
+  </div>
+
+  <script>
+    // Do HTML para o JavaScript
+
+    /* 
+    DOM é a estrutura visivel
+    para o usuário, o que fica no <body>
+    */
+    function alertaClick() {
+      alert('Botão pressionado!');
+    }
+
+    function alertaMouse() {
+      alert('Passou em cima!');
+    }
+
+    function alertaDigitacao() {
+      alert('Digitou algo!');
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+Na raiz do projeto:
+
+$ yarn init
+//
+$ yarn add @babel/cli
+//
+$ yarn add @babel/preset-env
+//
+
+yarn.lock = cache
+//
+node_modules = guarda as dependencias do projeto
+//
+"scripts": {
+    "dev": "babel .man.js -o bandler.js"
+  }
+  // scripts para usar via terminal
+  // script para gerar o bandler (para gerar o arquivo es6 que vai ser transformado para que o navegador entenda)
+
+$ yarn dev // para executar o script
+
+"dev": "babel ./main.js -o ./bandler.js -w" // -w serve para monitorar os arquivos
+//
+
+$ yarn add @babel/plugin-proposal-object-rest-spread
+// Necessita de novos pacotes. Plugins para o Babel
+

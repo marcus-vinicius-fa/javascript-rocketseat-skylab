@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScript</title>
+</head>
+
+<body>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+
+    <script>
+        function checaIdade(idade) {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    return idade >= 18 ? resolve() : reject(); // condição ternária // função resolve e reject para tratar a requisição
+                }, 2000);
+            });
+        }
+
+        checaIdade(20)
+            .then(function () { // chama o resolve
+                console.log("Maior que 18");
+            })
+            .catch(function () { // chama o reject
+                console.log("Menor que 18");
+            });
+    </script>
+</body>
+
+</html>

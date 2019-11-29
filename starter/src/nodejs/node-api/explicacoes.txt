@@ -1,0 +1,47 @@
+# COMANDOS
+
+## npm init -y :
+
+Cria o package.json arquivo têm algumas instruções de a como nossa aplicação
+deve ser comportar. ElNBe serve para guardar as versões das dependências de um
+projeto.
+
+## npm install express :
+
+Instala a dependêcia Express
+// npm install express pega a ultima versão instável
+
+## npm install -D nodemon :
+
+-D parametro para dependência de dev, instalar no modo desenvolvedor
+
+## npm run :
+
+Serve para executar os scripts dentro do package.json
+
+###############################################################################
+
+# OUTRAS EXPLICAÇÕES
+
+## express -> é basicamente um micro-framework que ajuda a lidar com rotas e views.
+As rotas são os endereços da URL que o usuário vai poder acessar na nossa API,
+e as views são a forma de visualização. Na API Rest não se usa as views.
+
+## A primeira coisa a se fazer é a configuração do Servidor, o arquivo principal da 
+aplicação, pois é ele quem inicializa a aplicação.
+
+## node_modules -> é a pasta que vai armazenar as dependências. O próprio express
+têm suas próprias dependências instaladas no node-modules.
+
+## package-lock.json -> é basicamente para armazenar cache. Ajuda a evitar
+redundâncias entre as dependências.
+
+## server.js ou index.js -> é o arquivo principal da aplicação.
+
+## nodemon -> faz automaticamenta a inicializção do servidor toda vez que há uma 
+alteração. Como utilizar o nodemon? A melhor form é criar um scripts.
+
+## devDependencies -> são dependências que vams usar apenas no ambiente de 
+desenvolvimento (enquanto estamos criando a nossa aplicação), ou seja não vão 
+ser instaladas quando a aplicação foi para produção e ficar online, são dependências
+não são necessárias ao funcionamento.

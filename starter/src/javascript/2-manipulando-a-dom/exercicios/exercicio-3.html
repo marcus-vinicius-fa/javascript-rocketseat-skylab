@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <title>Curso JavaScript - Manipulando a DOM</title>
+</head>
+
+<body>
+  
+  <script>
+    var ulElement = document.createElement('ul');
+    var bodyElement = document.querySelector('body');
+    bodyElement.appendChild(ulElement);
+
+    var nomes = ["Marcus", "Sâmela", "Filho"];
+
+    for (nome of nomes) {
+      var liElement = document.createElement('li');
+      var text = document.createTextNode(nome);
+      liElement.appendChild(text);
+      ulElement.appendChild(liElement);
+      console.log(nome);
+    };
+
+  </script>
+
+
+</body>
+
+</html>
+
+<!-- RESOLUÇÃO DO EXERCÍCIO PELA ROCKETSEAT -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercício 03</title>
+</head>
+
+<body>
+  <ul></ul>
+
+  <script>
+    var nomes = ['Diego', 'Gabriel', 'Lucas'];
+    var listElement = document.querySelector('ul');
+    for (nome of nomes) {
+      var liElement = document.createElement('li');
+      var textElement = document.createTextNode(nome);
+      liElement.appendChild(textElement);
+      listElement.appendChild(liElement);
+    }
+  </script>
+</body>
+
+</html> -->
