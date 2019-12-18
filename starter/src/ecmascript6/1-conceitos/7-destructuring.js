@@ -24,4 +24,4 @@ console.log(nome + ',', idade + ' anos', '\n' + cidade)
 
 // mostraNome(usuario)
 
-const mostraUsuario = ({ nome, idade } /*= usuario*/) => console.log(nome, idade)
+const mostraUsuario = ({ nome, idade } /* = usuario*/) => console.log(nome, idade)

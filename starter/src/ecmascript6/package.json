@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4"
+    "@babel/preset-env": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.0"
   },
   "scripts": {
-    "dev": "babel ./1-conceitos/10-object_short_syntax.js -o ./bundle.js -w"
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production"
   }
 }
