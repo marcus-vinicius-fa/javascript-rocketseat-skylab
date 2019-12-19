@@ -6,3 +6,4 @@ Anotações úteis:
 
 - [ESLint, como?](markdown/eslint.md)
 - [Projeto com ES6+](markdown/es6.md)
+- [Axios](markdown/axios.md)
