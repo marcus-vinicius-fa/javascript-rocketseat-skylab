@@ -42,6 +42,7 @@ Criar um arquivo _.babelrc_ para configurações do Babel, e popular assim:
 	]
 }
 ```
+
 ## Configuração inicial dos _Scripts_
 
 Em package.json adicionar o script:
@@ -72,8 +73,6 @@ Para usar o operador **Rest/Spread** (Caso não venha por padrão no node_module
 
 `$ yarn add @babel/plugin-proposal-object-rest-spread`
 >_Esse novo recurso pode ser adicionado como **plugin do Babel** porém pode já estar presente no projeto_
-
---------------
 
 ## Webpack
 
@@ -114,7 +113,6 @@ Modificar o script _dev_ novamente
     "dev": "webpack-dev-server --mode=development"
   }
 ```
-
 Remova o bundle.js. O webpack-dev-server automaticamente imbute o arquivo bundle.js sem a necessidade de criar um arquivo visível no projeto
 
 ### Crie e popule o _webpack.config.js_
