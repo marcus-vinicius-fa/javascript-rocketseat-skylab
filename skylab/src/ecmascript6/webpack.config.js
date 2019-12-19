@@ -1,6 +1,7 @@
 // sintaxe do webpack
 // propriedades..
 module.exports = {
+    // entry: './src/main-exercicio-m2.js', // exercicio de webpack - modulo 2
     entry: './src/main.js', // arquivo principal // onde iremos escrever o codigo com es6+
     output: { // pra qual lugar e arquivo devo enviar o código convertido
         path: __dirname + '/public', // variável global que se refere ao diretorio onde está o arquivo de configuração do webpack (raiz) 
