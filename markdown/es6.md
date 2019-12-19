@@ -100,6 +100,7 @@ Em _package.json_ trocar _"babel ./main.js -o ./bundle.js -w"_ para chamar o web
 `"dev": "webpack --mode=development -w"`
 
 Na raiz do projeto...
+
 `$ yarn dev`
 
 ## webpack-dev-server
@@ -170,6 +171,7 @@ module.exports = {
 ### Para visualizar os efeitos no browser
 
 Na raiz do projeto...
+
 `$ yarn dev`
 
 Basta acessar <http://localhost:8080/> conforme indica a terceira linha após a execução do comando acima
