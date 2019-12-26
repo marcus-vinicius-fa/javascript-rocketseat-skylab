@@ -1,16 +1,29 @@
 const express = require('express'); // importar o express // retora uma função
+const mongoose = require('mongoose')
+const requireDir = require('require-dir')
 
+// Iniciando o App
 const app = express(); // executando a função express
+app.use(express.json()) // Para permitir o envio de dados no formato JSON
 
-app.get('/', (req, res) =>{
-  res.send("Hello Rocketseat"); // send = enviar
+// Iniciando o DB
+// Caso tenha usuario e senha usar -> mongoose://user@password
+mongoose.connect(
+  'mongodb://localhost:27017/nodeapi',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }) // , { useNewUrlParser: true }
+// nodeapi -> schema (coleção de objetos dentro de um db)
+// entre {} estão os parâmetros
 
-}) // Toda vez que o usuário acessar essa rota // O segundo 
-// parametro é uma função.
-// '/' essa é a rota raiz.
-// (req, res)
-// req -> a requisição que estamos fazendo ao servidor // posso pegar diversos 
-// tipos de informaçao da requisição.
-// res -> a resposta que damos para a requisição
+// logo a baixo da conecção com o banco de dados
+// require('./src/models/Product')
+requireDir('./src/models')
+
+// const product = mongoose.model('Product')
+
+// Rotas
+app.use('/api', require('./src/routes')) // use é um "coringa" (serve como get, post...)
 
 app.listen(3001); // Tô falando pra apicação ouvir a porta /3001 do navegador"
