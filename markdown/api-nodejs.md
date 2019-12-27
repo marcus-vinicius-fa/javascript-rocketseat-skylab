@@ -16,17 +16,23 @@ $ sudo docker pull mongo
 // Baixando imagem do mongodb
 
 $ sudo docker run --name mongodb -p 27017:27017 -d mongo
-// Criando container da imagem mongo
+// Criando container da imagem mongo e levantando o banco de dados
 
+// Dentro da pasta node-api rode o script para levantar o servidor
+$ npm run dev
+```
+
+Outros comandos úteis:
+
+```
 $ sudo docker start mongodb (nome do container)
 // "Startar" container (após reiniciar computador, por exemplo...)
 
 $ sudo docker stop mongodb (nome do container)
 // Parar execução do container
-
-// Dentro da pasta node-api rode o script para levantar o servidor
-$ npm run dev
 ```
+
+Para saber mais, veja [aqui](nodejs.md)...
 
 Feito isso abra o [Insomnia](https://insomnia.rest/) ou [Postman](https://www.getpostman.com/)...
 
