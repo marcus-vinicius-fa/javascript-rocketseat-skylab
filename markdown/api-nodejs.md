@@ -2,7 +2,7 @@
 
 # API NodeJS
 
-Com [git](https://git-scm.com/), [npm](https://nodejs.org/en/) e [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) instalados...
+Com o [git](https://git-scm.com/), [npm](https://nodejs.org/en/) e [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) instalados...
 
 ```
 $ git clone https://github.com/marcus-vinicius-fa/javascript-rocketseat-skylab.git
