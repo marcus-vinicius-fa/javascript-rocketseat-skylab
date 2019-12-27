@@ -1,10 +1,12 @@
 const express = require('express'); // importar o express // retora uma função
+const cors = require('cors') // npm install cors // Não instalado ainda
 const mongoose = require('mongoose')
 const requireDir = require('require-dir')
 
 // Iniciando o App
 const app = express(); // executando a função express
 app.use(express.json()) // Para permitir o envio de dados no formato JSON
+app.use(cors())
 
 // Iniciando o DB
 // Caso tenha usuario e senha usar -> mongoose://user@password

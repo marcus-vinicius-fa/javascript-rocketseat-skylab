@@ -354,3 +354,94 @@ async StorageEvent(req, res) {
     return res.json(product)
 },
 ```
+
+**Outros métodos HTTP implementados (CRUD)**
+
+![screenshot-http_metods](../images/screenshot-http_methods.png)
+
+Ver a construção dessas features no código fonte -> **skylab/nodejs/node-api/src**
+
+[ProductController.js](../skylab/nodejs/node-api/src/controllers/ProductController.js)
+
+[routes.js](../skylab/nodejs/node-api/src/routes.js)
+
+## Paginação
+
+`$ npm install mongoose-paginate`
+
+Em **models/Product.js**:
+
+```
+const mongoosePaginate = require('mongoose-paginate')
+
+ProductSchema.plugin(mongoosePaginate)
+```
+
+Agora em **controllers/ProductController**:
+
+```
+async index(req, res) { 
+        const products = await Product.paginate({}, { page: 1, limit: 10 }) 
+        
+        // Trocar .find por .paginate e ajustar os parâmetros
+        // page -> página atual 
+        // limit -> até quantos objetos por página
+        
+        return res.json(products)
+    },
+```
+
+Veja como fica a paginação no **Insominia**
+
+![screenshot-paginate](../images/screenshot-paginate.png)
+
+"total": -> quantidade de elementos/objetos (22) 
+
+"limit": -> elementos por página (10)
+
+"page": -> página atual (1)
+
+"pages": -> quantidade de páginas (no caso 22/10 = 2,.. logo são necessárias 3 páginas)
+
+### Paginação com parâmetros de URL
+
+Modifique **controllers/ProductController** adicionando: 
+
+```
+// desestruturação + valor padrão
+const { page = 1 } = req.query
+
+// Uso a variável page que por padrão é "1"
+const products = await Product.paginate({}, { page, limit: 10 })
+```
+
+Agora basta usar a URL abaixo, por exemplo...
+
+**base_url/products?page=[numero da página]**
+
+// Lembrando -> base_url = http://localhost:3001/api
+
+![screenshot-paginate_params_insomnia](../images/screenshot-paginate_params_insomnia.png)
+
+No **browser**:
+
+![screenshot-paginate_params_browser](../images/screenshot-paginate_params_browser.png)
+
+## Permitir acesso a API em outras máquinas
+
+### CORS (simplificado) 
+
+```
+$ npm install cors
+```
+
+No **server.js** adicionar
+
+```
+const cors = require('cors')
+
+app.use(cors())
+// cors(aqui é possível passar configurações de dominios,...)
+```
+
+Agora a API está pronta e disponível para ser acessada publicamente.
