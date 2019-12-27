@@ -338,7 +338,7 @@ Criar rota:
 
 `routes.post('/products', ProductController.store)`
 
-E em adicionar este método ao Controller:
+E adicionar este método ao Controller:
 
 ```
 async StorageEvent(req, res) {
