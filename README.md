@@ -18,7 +18,7 @@ _**Habilidades praticadas:** Uso XMLHttpRequest, Promises, uso da lib Axios, man
 
 **[API NodeJS](markdown/api-nodejs.md)**
 
-_**Habilidades praticadas:** ORM Mongoose, visualização de objetos e tabelas do MongoDB utilizando Robo 3T, uso do Insomnia REST Client, visualização das requisições via Browser, Docker, features do ES6+._
+_**Habilidades praticadas:** ORM Mongoose, visualização de objetos e tabelas do MongoDB utilizando Robo 3T, uso do Insomnia REST Client, visualização das requisições via Browser, uso do Docker e features do ES6+._
 
 ---
 
