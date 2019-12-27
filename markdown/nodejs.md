@@ -6,7 +6,7 @@
 
 `$ npm init -y `
 
-_Inicia o **node_modules** (Onde ficaram as dependências instaladas) e cria o arquivo **package.json**, nele estão algumas instruções de como nossa aplicação deve ser comportar, e principalmente, este arquivo vai guardar as versões das dependências adicionadas ao projeto. o **-y** é um parâmetro que indica que queremos iniciar com uma configuração default (yes>yes>yes...). O package-lock.json serve como um cache dos pacotes, contendo o versionamento e outras informações necessárias para evitar a redundância de instalações, por exemplo_
+_Inicia o **node_modules** (Onde ficaram as dependências instaladas) e cria o arquivo **package.json**, nele estão algumas instruções de como nossa aplicação deve ser comportar, e principalmente, este arquivo vai guardar as versões das dependências adicionadas ao projeto. o **-y** é um parâmetro que indica que queremos iniciar com uma configuração default (yes>yes>yes...). O package-lock.json serve como um cache dos pacotes, contendo o versionamento e outras informações necessárias para evitar a redundância de instalações, por exemplo._
 
 ### Express
 
@@ -47,15 +47,17 @@ Acessar [localhost:3001](http://localhost:3001)
 
 `$ npm install -D nodemon`
 
-_O Nodemon serve para fazer a re-inicialização do servidor sempre que houver alguma mudança, ele fica monitorando alterações. O **-D** (--save-dev) é o parâmetro para instalar como dependência de dev, (instala em modo desenvolvedor)_
+_O Nodemon serve para fazer a re-inicialização do servidor sempre que houver alguma mudança, ele fica monitorando alterações. O **-D** (--save-dev) é o parâmetro para instalar como dependência de dev, (instala em modo desenvolvedor)._
 
-Em **"scripts":** adicionar o seguinte script:
+Em **"scripts"** adicionar o seguinte script:
 
 ```
 {
 "dev": "nodemon server.js"
 }
 ```
+
+No terminal...
 
 `$ npm run dev`
 
@@ -104,9 +106,13 @@ Verificando quais imagens estão rodando:
 
 Faça o download e instalação via instalador ou...
 
-`$ snap install robo3t-snap` 
+```
+$ sudo apt update && sudo apt install snapd
 
-(em sistemas linux com suporte a pacotes snap)
+$ snap install robo3t-snap
+
+// Via pacote snap
+```
 
 **Observação**
 
