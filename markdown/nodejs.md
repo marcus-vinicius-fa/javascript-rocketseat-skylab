@@ -41,7 +41,7 @@ Rodar:
 
 `$ node server.js`
 
-Acessar <localhost:3001>
+Acessar [localhost:3001](http://localhost:3001)
 
 ### Nodemon
 
@@ -98,7 +98,7 @@ Verificando quais imagens estão rodando:
 
 `$ sudo docker ps`
 
-<localhost:27017>
+[localhost:27017](http://localhost:27017)
 
 **Utilizando o [Robo 3T](https://robomongo.org/download) (Uma inteface)**
 
@@ -262,7 +262,7 @@ app.use('/api', require('./src/routes'))
 // use é um "coringa" (serve como get, post...)
 ```
 
-Abrir <localhost:3001/api>
+Abrir [localhost:3001/api](http://localhost:3001/api)
 
 Separando a lógica das rotas
 
@@ -311,11 +311,11 @@ module.exports = routes
 // exportando routes
 ```
 
-Acessando <localhost:3001/api/products>
+Acessando [localhost:3001/api/products](http://localhost:3001/api/products)
 
 ![screenshot-products](../images/screenshot-products.png)
 
-Via **Insomnia**
+Via [Insomnia](https://insomnia.rest/)
 
 ![screenshot-insomnia](../images/screenshot-insomnia.png)
 
