@@ -2,18 +2,10 @@
 
 [Skylab Plataform](https://skylab.rocketseat.com.br/)
 
-## Roteiro
+## Roteiros
 
-- [x] javascript vanilla
-- [x] ecmascript6
-- [x] nodejs
-- [x] reactjs
-- [ ] react native
-
-## Anotações
-
-- [javascript vanilla]()
-- [ecmascript6]()
-- [nodejs]()
-- [reactjs]()
-- [react native]()
+- [javascript vanilla](skylab/1-javascript/README.md)
+- [ecmascript6](skylab/2-ecmascript6/README.md)
+- [nodejs](skylab/3-nodejs/README.md)
+- [reactjs](skylab/4-reactjs/README.md)
+- [react native](skylab/5-reactnative/README.md)
