@@ -25,4 +25,4 @@
 
 1. Inicie o aplicação `npm start`
 
-1. Acesse [localhost:3000/](localhost:3000/)
+1. Acesse [localhost:3000/](http://localhost:3000/)
