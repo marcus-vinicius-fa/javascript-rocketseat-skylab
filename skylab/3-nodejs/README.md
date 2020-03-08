@@ -84,10 +84,14 @@ Com o [Git](https://git-scm.com/), [NPM](https://nodejs.org/en/) e [Docker](http
             }
             ```
 
-    - **update** - PUT base_url/products/\<id-do-objeto>
+    - **update**
 
-        Siga o exemplo do "create".
+        - PUT base_url/products/\<id-do-objeto>
 
-    - **destroy** - DELETE base_url/products/\<id-do-objeto>
+            Siga o exemplo do "create".
+
+    - **destroy**
+
+        - DELETE base_url/products/\<id-do-objeto>
 
 1. Clique em "Send" para fazer as requisições.
