@@ -1,4 +1,4 @@
-[home](../../README.md) < reactjs
+[home](../../) < reactjs
 
 # ReactJS
 

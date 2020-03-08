@@ -1,4 +1,4 @@
-[home](../../README.md) < js-vanilla
+[home](../../) < js-vanilla
 
 # JavaScript Vanilla
 

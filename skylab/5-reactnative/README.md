@@ -1,8 +1,6 @@
-[home](../../README.md) < react-native
+[home](../../) < react-native
 
 # React Native
-
-<!-- rode `npm install` para instalar as dependências. -->
 
 ## Roteiro
 

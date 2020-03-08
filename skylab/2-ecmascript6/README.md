@@ -1,4 +1,4 @@
-[home](../../README.md) < es6
+[home](../../) < es6
 
 # ECMAScript 6
 
