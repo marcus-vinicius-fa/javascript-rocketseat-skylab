@@ -1,5 +1,3 @@
-[home](../../) < reactjs
-
 # ReactJS
 
 ## Roteiro

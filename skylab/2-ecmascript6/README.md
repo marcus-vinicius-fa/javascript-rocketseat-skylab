@@ -1,5 +1,3 @@
-[home](../../) < es6
-
 # ECMAScript 6
 
 rode `npm install` para instalar as dependências.

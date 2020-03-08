@@ -1,5 +1,3 @@
-[home](../../) < react-native
-
 # React Native
 
 ## Roteiro

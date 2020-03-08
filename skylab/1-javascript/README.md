@@ -1,5 +1,3 @@
-[home](../../) < js-vanilla
-
 # JavaScript Vanilla
 
 ## Roteiro
