@@ -25,7 +25,7 @@ Com o [Git](https://git-scm.com/), [NPM](https://nodejs.org/en/) e [Docker](http
 
 1. Clone o repositório `git clone https://github.com/marcus-vinicius-fa/rocketseat-skylab-studies.git`
 
-1. Entre na pasta `cd rocketseat-skylab-studies/skylab/nodejs/node-api`
+1. Entre na pasta `cd rocketseat-skylab-studies/skylab/3-nodejs/node-api`
 
 1. Instale as dependências `npm install`
 
