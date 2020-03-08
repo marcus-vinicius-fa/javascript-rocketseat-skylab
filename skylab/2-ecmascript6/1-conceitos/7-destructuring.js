@@ -1,12 +1,12 @@
 const usuario = {
-  nome: 'Marcus',
-  idade: 25,
-  profissao: 'Software Development - FullStack JavaScript',
-  endereco: {
-    cidade: 'Jacaraú',
-    rua: 'Manoel Aureliano Pessoa',
-    estado: 'PB',
-  },
+    nome: 'Marcus',
+    idade: 25,
+    profissao: 'Software Development - FullStack JavaScript',
+    endereco: {
+        cidade: 'Jacaraú',
+        rua: 'Manoel Aureliano Pessoa',
+        estado: 'PB',
+    },
 }
 
 // const nome = usuario.nome
@@ -25,3 +25,6 @@ console.log(nome + ',', idade + ' anos', '\n' + cidade)
 // mostraNome(usuario)
 
 const mostraUsuario = ({ nome, idade } /* = usuario*/) => console.log(nome, idade)
+
+mostraUsuario(usuario)
+

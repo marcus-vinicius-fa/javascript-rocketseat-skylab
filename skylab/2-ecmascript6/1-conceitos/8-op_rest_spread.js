@@ -7,9 +7,9 @@
 // Com Objetos
 
 const usuario = {
-  nome: 'Marcus',
-  idade: 25,
-  profissao: 'Software Development'
+    nome: 'Marcus',
+    idade: 25,
+    profissao: 'Software Development'
 }
 
 const { nome, ...resto } = usuario
@@ -17,7 +17,7 @@ const { nome, ...resto } = usuario
 console.log(nome)
 console.log(resto)
 
-/// Com Arrays 
+/// Com Arrays
 
 const vetor = [1, 2, 3, 4] // destructuring in array
 
@@ -34,7 +34,7 @@ console.log(c)
 // console.log(soma(1, 2, 3))
 
 const soma = (...params) => {
-  return params.reduce((total, next) => total + next)
+    return params.reduce((total, next) => total + next)
 }
 
 console.log(soma(1, 2, 3))

@@ -1,4 +1,4 @@
-// keeworlds -> export, import
+// keewords -> export, import
 
 export default function soma(a, b) {
     return a + b

@@ -2,7 +2,7 @@
 
 axios.get('http://api.github.com/users/marcus-vinicius-fa')
     .then(function (response) {
-        console.log(response); // testar -> response.data.avatar_url
+        console.log(response); // testar -> response.data.login
     })
     .catch(function (error) {
         console.warn(error);

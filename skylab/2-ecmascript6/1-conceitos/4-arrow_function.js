@@ -1,10 +1,10 @@
 function returnArray(max) {
-  let vetor = []
+    let vetor = []
 
-  for (let i = 1; i <= max; i++) {
-    vetor.push(i)
-  }
-  return vetor
+    for (let i = 1; i <= max; i++) {
+        vetor.push(i)
+    }
+    return vetor
 }
 
 let vetor = returnArray(10)
@@ -23,11 +23,11 @@ console.log(newVetor)
 
 // Arrow function tbm
 // Não recomendado // melhor utilizar em callbacks
-const returnVerbo = (verbo) => {
-  return verbo
+const returnPhrase = (verbo) => {
+    return verbo
 }
 
-console.log(returnVerbo('Arrow Function'))
+console.log(returnPhrase('Arrow Function'))
 
 // Funções dentro de objetos não recebem a keyword function
 
