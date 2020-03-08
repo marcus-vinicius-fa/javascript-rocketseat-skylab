@@ -39,7 +39,7 @@ Com o [Git](https://git-scm.com/), [NPM](https://nodejs.org/en/) e [Docker](http
 
 1. Rode o script para subir o servidor express com a api `npm run dev`
 
-1. Caso o container com o MongoDB pare de rodar por algum motivo, inicie novamente
+1. Caso o container com o MongoDB pare de rodar por algum motivo, inicie novamente:
 
     - Verifique o nome do container e seu status `sudo docker ps -a`
 
