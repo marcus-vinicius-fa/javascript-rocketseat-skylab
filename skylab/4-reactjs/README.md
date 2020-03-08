@@ -2,8 +2,6 @@
 
 # ReactJS
 
-rode `npm install` para instalar as dependências.
-
 ## Roteiro
 
 - [x] o que é reactjs?
@@ -16,3 +14,15 @@ rode `npm install` para instalar as dependências.
 - [x] pógina anterior/próxima
 - [x] configurando navegação
 - [x] navegando pro detalhe
+
+## Testanto o App React
+
+1. Clone o repositório `git clone https://github.com/marcus-vinicius-fa/rocketseat-skylab-studies.git`
+
+1. Entre na pasta `cd rocketseat-skylab-studies/skylab/4-reactjs/huntweb`
+
+1. Instale as dependências `npm install`
+
+1. Inicie o aplicação `npm start`
+
+1. Acesse <localhost:3000/>
